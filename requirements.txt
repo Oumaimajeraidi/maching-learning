@@ -3,13 +3,13 @@
 # Streamlit (OBLIGATOIRE — sinon "streamlit: command not found")
 streamlit==1.58.0
 
-# Core ML
-numpy>=1.24.0,<2.0.0
+# Core ML  (versions EXACTES du local = SHAP + modele fonctionnent sur le cloud)
+numpy==1.26.4
 pandas>=2.0.0
 scikit-learn==1.8.0
 xgboost>=2.0.0
 imbalanced-learn>=0.11.0
-shap>=0.43.0
+shap==0.51.0
 
 # Chemistry
 rdkit
