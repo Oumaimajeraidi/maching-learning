@@ -15,13 +15,11 @@ env/
 .env
 .venv/
 
-# ── Modeles ML (trop lourds pour GitHub) ──────────────────────
-models/*.pkl
+# ── Modeles ML ────────────────────────────────────────────────
 models/*.joblib
 models/*.h5
 
-# ── Dataset (redistribution non autorisee) ────────────────────
-data/*.csv
+# ── Dataset ───────────────────────────────────────────────────
 data/*.sdf
 data/*.xlsx
 
