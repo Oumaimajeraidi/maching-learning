@@ -1,9 +1,12 @@
 # TOX21 Multi-Label Toxicity Prediction
 
+# Streamlit (OBLIGATOIRE — sinon "streamlit: command not found")
+streamlit==1.58.0
+
 # Core ML
 numpy>=1.24.0,<2.0.0
 pandas>=2.0.0
-scikit-learn>=1.3.0
+scikit-learn==1.8.0
 xgboost>=2.0.0
 imbalanced-learn>=0.11.0
 shap>=0.43.0
