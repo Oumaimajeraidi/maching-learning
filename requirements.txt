@@ -3,13 +3,16 @@
 # Streamlit (OBLIGATOIRE — sinon "streamlit: command not found")
 streamlit==1.58.0
 
-# Core ML  (versions EXACTES du local = SHAP + modele fonctionnent sur le cloud)
-numpy==1.26.4
+# Core ML
+# numpy libre (>=1.26) : sur Python 3.14 le cloud installe numpy 2.x,
+# qui lit sans probleme le modele cree avec numpy 1.26 en local.
+# scikit-learn EST pin a 1.8.0 (version exacte d'entrainement du modele .pkl).
+numpy>=1.26,<3
 pandas>=2.0.0
 scikit-learn==1.8.0
 xgboost>=2.0.0
 imbalanced-learn>=0.11.0
-shap==0.51.0
+shap>=0.51.0
 
 # Chemistry
 rdkit
